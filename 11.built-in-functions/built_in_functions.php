@@ -39,4 +39,29 @@ echo "<br/>";
 echo str_replace("W", "Y", $store);
 echo "<br/>";
 echo $store;
+echo "<br/>";
+
+// Arrays 
+echo "<b>Array Built in </b> ";
+echo "<br/>";
+$array_example = ["Sugar", "Banana", "Oat", "Mango"];
+echo array_pop($array_example);
+echo "<br/>";
+echo array_push($array_example, "Love");
+echo "<br/>";
+
+$merge_array = array_merge($array_example, ["TT", "ST", "TT", "TT", "TT"]);
+$key_array = ["job"=>"sofware engineer", "name"=> "tuedon"];
+print_r($merge_array);
+
+echo "<br/>";
+echo in_array("TT", $merge_array);
+
+echo "<br/>";
+
+sort($merge_array);
+
+print_r($merge_array);
+
+ksort($key_array);
 
